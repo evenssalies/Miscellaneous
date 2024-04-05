@@ -1,4 +1,4 @@
-import numpy as np
+import numpy as np                    # np is an alias pointing to numpy
 import matplotlib.pyplot as plt
 
 def generate_AR3(phi, n):
