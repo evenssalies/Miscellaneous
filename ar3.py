@@ -31,7 +31,7 @@ AR3_process = generate_AR3(phi, n)
 
 # Plot the time series
 plt.plot(AR3_process)
-plt.title("AR(3) Process")
+plt.title("AR(3) process")
 plt.xlabel("Time")
 plt.ylabel("Value")
 plt.show()
