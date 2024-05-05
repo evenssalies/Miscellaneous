@@ -1,4 +1,3 @@
-## Literal expressions
 # An expression
 
 print(100)
