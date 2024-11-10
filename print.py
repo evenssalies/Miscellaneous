@@ -4,7 +4,7 @@
 #       Proceedings of the Second International Conference on Knowledge Discovery and Data Mining, 1996
 
 import pandas as pd
-"""
+
 #   Première valeur de la variable RD_COU_TOTAL_TOTAL
 DATA = pd.read_stata('http://www.evens-salies.com/rd_e_gerdfund.dta')
 DATA.info()
@@ -16,7 +16,7 @@ DATA = pd.read_csv('http://www.evens-salies.com/country_code_baci92.csv')
 DATA.info()
 for j in range(len(DATA)):
     print(DATA.at[j, 'country'], DATA.at[j, 'i'])
-"""
+
 #   Va chercher la prochaine base dans openml
 import openml
 DATASET = openml.datasets.get_dataset(1590)
