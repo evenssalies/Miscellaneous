@@ -2,7 +2,7 @@
 #
 #   .dta
 import pandas as pd
-DATA = pd.read_stata('myfile.dta')
+DATA = pd.read_stata('http://www.evens-salies.com/rd_e_gerdfund.dta')
 
 #   .csv
 DATA = pd.read_csv('myfile.csv')
