@@ -2,9 +2,16 @@
 #
 #   .dta
 import pandas as pd
-DATA = pd.read_stata('myfile.dta')
+DATA = pd.read_stata('http://www.evens-salies.com/rd_e_gerdfund.dta')
 
-#   .raw (do later)
+#       Les variables du fichier, missing et type
+DATA.info()
+
+#       Première valeur de la variable RD_COU_TOTAL_TOTAL
+VAR = DATA.at[0, 'RD_COU_TOTAL_TOTAL']
+print(VAR)
+
+#   .raw
 
 #   .csv
 DATA = pd.read_csv('myfile.csv')
