@@ -55,3 +55,7 @@ print(f"The dataset contains {DATA.shape[0]} observations and {DATA.shape[1]} va
 
 #       Nombre de features (#variables - 1) et de classes (#elements dans TARGET)
 print(f"Parmi les variables, il y a {DATA.shape[1] - 1} features et {len([TARGET])} classe(s).")
+
+#       Tableau de fréquences
+print(DATA['workclass'].value_counts(), end='\n\n')
+print(DATA['sex'].value_counts())

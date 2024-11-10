@@ -21,7 +21,7 @@ DATA = DATA[Xy]
 # Importation de matplotlib pour afficher les graphiques
 import matplotlib.pyplot as plt
 
-# Histogramme (placé dans un garbage objet)
+"""# Histogramme (placé dans un garbage objet)
 DATA.hist(figsize=(10, 7))
 plt.show()
 
@@ -32,4 +32,26 @@ print(DATA['marital-status'].value_counts(), end='\n\n')
 print(DATA['occupation'].value_counts(), end='\n\n')
 print(DATA['relationship'].value_counts(), end='\n\n')
 print(DATA['sex'].value_counts(), end='\n\n')
-print(DATA['native-country'].value_counts(), end='\n\n')
+print(DATA['native-country'].value_counts(), end='\n\n')"""
+
+# Tableau croisé
+print()
+print(pd.crosstab(index=DATA['education'], columns=DATA['education-num']))
+
+#
+import seaborn as sns
+
+# We plot a subset of the data to keep the plot readable and make the plotting
+# faster
+n_samples_to_plot = 5000
+columns = ['age', 'education-num', 'hours-per-week']
+_ = sns.pairplot(
+    data=DATA[:n_samples_to_plot],
+    vars=columns,
+    hue=TARGET,
+    plot_kws={'alpha': 0.2},
+    height=3,
+    diag_kind='hist',
+    diag_kws={'bins': 30},
+)
+plt.show()
