@@ -5,16 +5,18 @@
 #   Adaptation of code source: https://www.fun-mooc.fr/fr/cours/machine-learning-python-scikit-learn/
 
 import pandas as pd
-
+"""
 #   Première valeur de la variable RD_COU_TOTAL_TOTAL
 DATA = pd.read_stata('http://www.evens-salies.com/rd_e_gerdfund.dta')
 DATA.info()
 VAR = DATA.at[0, 'RD_COU_TOTAL_TOTAL']
-print(VAR)
+print(VAR)"""
 
 #   Deux colonnes d'un tableau .csv side by side (country, i)
-DATA = pd.read_csv('http://www.evens-salies.com/country_code_baci92.csv')
+DATA = pd.read_csv('C:/Users/evens/Documents/Evens/DATA/Firm/Demography/StockEtablissementHistorique_utf8.csv')
 DATA.info()
+
+"""
 for j in range(len(DATA)):
     print(DATA.at[j, 'country'], DATA.at[j, 'i'])
 
@@ -60,3 +62,4 @@ print(f"Parmi les variables, il y a {DATA.shape[1] - 1} features et {len([TARGET
 #       Tableau de fréquences
 print(DATA['workclass'].value_counts(), end='\n\n')
 print(DATA['sex'].value_counts())
+"""
