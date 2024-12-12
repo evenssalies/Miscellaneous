@@ -17,5 +17,6 @@ def count_lines_in_csv(file_path):
         print(f"We reached", line_count)
     return line_count
 
-line_count = count_lines_in_csv('... StockEtablissementHistorique_utf8.csv')
+# Replace the path with the path to your file
+line_count = count_lines_in_csv('C:/Users/evens/Documents/Evens/DATA/Firm/Demography/StockEtablissementHistorique_utf8.csv')
 print(f"The CSV file contains {line_count} lines.")
