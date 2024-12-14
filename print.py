@@ -1,7 +1,8 @@
 # Variation sur la commande print
 # Auteur: Evens SALIES
-#   Source of 1590 OpenML dataset: Ron Kohavi, "Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid",
-#       Proceedings of the Second International Conference on Knowledge Discovery and Data Mining, 1996
+#   Source of 1590 OpenML dataset: Ron Kohavi, "Scaling Up the Accuracy of Naive-Bayes Classifiers:
+#       a Decision-Tree Hybrid", Proceedings of the Second International Conference on Knowledge
+#       Discovery and Data Mining, 1996
 #   Adaptation of code source: https://www.fun-mooc.fr/fr/cours/machine-learning-python-scikit-learn/
 
 import pandas as pd
@@ -43,7 +44,8 @@ print(DATA['class'].value_counts())
 #       (il s'agit de listes).
 TARGET = 'class'
 FEAT_CON = ['age', 'education-num', 'capital-gain', 'capital-loss', 'hours-per-week']
-FEAT_CAT = ['workclass', 'education', 'marital-status', 'occupation', 'relationship', 'race', 'sex', 'native-country']
+FEAT_CAT = ['workclass', 'education', 'marital-status', 'occupation',
+            'relationship', 'race', 'sex', 'native-country']
 
 #      Concaténation des colonnes
 Xy = FEAT_CON + FEAT_CAT + [TARGET]
