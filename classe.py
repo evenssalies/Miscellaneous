@@ -3,8 +3,6 @@ class Phrase:
     # attribut: ma-phrase, qui référence une chaîne de caractères
     ma_phrase = "Je fais un MOOC sur python"
 
-# Ce qui suit est à taper dans un terminal Python (Jupyter ou autre)
-#
 print(f"{Phrase.ma_phrase}\n")
 
 # Phrase est aussi un objet, à partir duquel on peut créer des instances
