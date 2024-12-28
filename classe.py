@@ -1,4 +1,6 @@
-# classe: Phrase
+import os
+
+"""# classe: Phrase
 class Phrase:
     # attribut: ma-phrase, qui référence une chaîne de caractères
     ma_phrase = "Je fais un MOOC sur python"
@@ -58,4 +60,20 @@ print(f"{vars(p)}\n")
 
 # Sont équivalents
 p = Phrase(s)
-Phrase.__init__(p, s)
+Phrase.__init__(p, s)"""
+
+# Application 1
+class Famille:
+    def __init__(self, fore_name, sur_name):
+        self.forename = fore_name
+        self.surname = sur_name
+
+    def display_info(self):
+        print(f"Forename: {self.forename:<10} Surname: {self.surname}")
+
+s = "Salies"
+family_members = [("Karine", "Chakir"), ("Evens", s), ("Zoë", s), ("Niña", s)]
+os.system('cls')
+for forename, surname in family_members:
+    member = Famille(forename, surname)
+    member.display_info()
