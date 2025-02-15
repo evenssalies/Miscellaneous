@@ -2,7 +2,7 @@ import os
 
 # classe: Phrase
 class Phrase:
-    # attribut: ma-phrase, qui référence une chaîne de caractères
+    # attribut: ma_phrase, qui référence une chaîne de caractères
     ma_phrase = "Je fais un MOOC sur python"
 
 print(f"{Phrase.ma_phrase}\n")
