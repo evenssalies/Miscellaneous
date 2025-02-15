@@ -1,6 +1,6 @@
 import os
 
-"""# classe: Phrase
+# classe: Phrase
 class Phrase:
     # attribut: ma-phrase, qui référence une chaîne de caractères
     ma_phrase = "Je fais un MOOC sur python"
@@ -60,7 +60,7 @@ print(f"{vars(p)}\n")
 
 # Sont équivalents
 p = Phrase(s)
-Phrase.__init__(p, s)"""
+Phrase.__init__(p, s)
 
 # Application 1
 class Famille:
