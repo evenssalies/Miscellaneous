@@ -8,7 +8,7 @@ class Phrase:
 print(f"{Phrase.ma_phrase}\n")
 
 # Phrase est aussi un objet, à partir duquel on peut créer des instances
-# instance: p, qui est une instance de la classe Phrase
+# instance: p, qui est une instance de Phrase
 p = Phrase()
 
 # p est aussi un objet
