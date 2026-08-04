@@ -1,4 +1,4 @@
-import os
+import subprocess
 
 # classe: Phrase
 class Phrase:
@@ -23,7 +23,7 @@ print(f"{vars(Phrase)}\n")
 print(f"{vars(p)}\n")
 
 # Or, on a une relation d'héritage entre l'instance p et la classe Phrase,
-#  p hérite néansmoins des attributs de la classe Phrase
+#  p hérite néanmoins des attributs de la classe Phrase
 print(f"{p.ma_phrase}\n")
 
 # attribut: mots, ajouté à Phrase, qui référence une liste de mots en découpant ma_phrase
@@ -73,7 +73,7 @@ class Famille:
 
 s = "Salies"
 family_members = [("Karine", "Chakir"), ("Evens", s), ("Zoë", s), ("Niña", s)]
-os.system('cls')
+subprocess.call('cls', shell=True)
 for forename, surname in family_members:
     member = Famille(forename, surname)
     member.display_info()
