@@ -1,0 +1,10 @@
+#include    <stdio.h>
+#define     PI 3.1415926
+int         main() {
+    double  area = 0.0, radius = 0.0;
+    printf("Enter radius: ");
+    scanf("%lf", &radius);
+    area = PI*radius*radius;
+    printf("Radius of %lf meters; area is %lf sq.meters\n", radius, area);
+    return 0;
+}
