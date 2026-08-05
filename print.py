@@ -8,16 +8,16 @@
 import pandas as pd
 
 #   Première valeur de la variable RD_COU_TOTAL_TOTAL
-DATA = pd.read_stata('http://www.evens-salies.com/rd_e_gerdfund.dta')
+DATA = pd.read_stata('http://www.frequency.fr/rd_e_gerdfund.dta')
 DATA.info()
 VAR = DATA.at[0, 'RD_COU_TOTAL_TOTAL']
 print(VAR)
 
 #   Deux colonnes d'un tableau .csv side by side (country, i)
-DATA = pd.read_csv('http://www.evens-salies.com/country_code_baci92.csv')
+DATA = pd.read_csv('http://www.frequency.fr/country_code_baci92.csv')
 DATA.info()
 for j in range(len(DATA)):
-    print(DATA.at[j, 'country'], DATA.at[j, 'i'])
+    print(f"{DATA.at[j, 'country']:<32} {DATA.at[j, 'i']}")
 
 #   Va chercher la prochaine base dans openml
 import openml
