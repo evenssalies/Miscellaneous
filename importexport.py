@@ -2,7 +2,7 @@
 #
 #   .dta
 import pandas as pd
-DATA = pd.read_stata('myfile.dta')
+DATA = pd.read_stata('sc_smoking.dta')
 
 #   .csv
 DATA = pd.read_csv('myfile.csv')
@@ -21,3 +21,6 @@ DATA = FRAME['mydata.data']
 #
 #   .dta
 DATA.to_stata('filename.dta', write_index=False)
+
+#   .csv
+DATA.to_csv('filename.csv', index=False)
